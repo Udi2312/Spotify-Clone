@@ -33,7 +33,7 @@ body{
 .heading{
     display: flex;
     gap: 11px;
-    width: 15px;
+    width: 146px;
     padding-top: 14px;
      font-weight: bold;
      align-items: center;
@@ -155,4 +155,12 @@ margin: 0 12px;
     display: flex;
     justify-content: center;
     gap: 16px;
+}
+
+.songlist ul{
+    padding: 42px 20px;
+}
+
+.songlist ul li{
+    list-style-type:decimal;
 }

@@ -18,6 +18,7 @@ async function getSongs(){
 async function PlaySongs(){
     let songs = await getSongs();
     console.log(songs);
+   let songUL= document.querySelector(".songlist").getElementsByTagName('ul')
     var audio = new Audio(songs[0]);
     audio.play();
     audio.addEventListener("loadeddata", function() {
@@ -25,4 +26,4 @@ async function PlaySongs(){
         console.log(duration);
     }
 )}
-PlaySongs()
+// PlaySongs()
