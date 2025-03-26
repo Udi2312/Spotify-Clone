@@ -15,7 +15,7 @@ async function getSongs(){
     }
    return songs;
 }
-async function PlaySongs(){
+async function main(){
     let songs = await getSongs();
     console.log(songs);
    let songUL= document.querySelector(".songlist").getElementsByTagName('ul')[0]
@@ -32,11 +32,12 @@ async function PlaySongs(){
                     </li> `
       
    }
-    var audio = new Audio(songs[0]);
-    audio.play();
-    audio.addEventListener("loadeddata", function() {
-        let duration = audio.duration;
-        console.log(duration);
-    }
-)}
-PlaySongs()
+
+   Array.from(document.querySelector('.songlist').getElementsByTagName('li')).forEach((e) => {
+console.log(e);
+
+   })
+}
+
+
+main();

@@ -199,7 +199,7 @@ margin: 0 12px;
     height: 2px;
     width: 98%;
     border-radius: 10px;
-    border: 2px solid black;
+    background-color: black;
     position: absolute;
     bottom: 0;
     margin: 6px;
@@ -212,4 +212,5 @@ margin: 0 12px;
     position: relative;
     bottom: 7px;
     left: -3px;
+    transition: left 0.5s;
 }
